@@ -22,6 +22,11 @@
                 display: grid;
                 grid-template-columns: 50% 50%;
                 grid-template-rows: 50% 50%;
+                &__link{
+                    &__new{
+                        display: none;
+                    }
+                }
             }
         }
     }
@@ -44,6 +49,16 @@
         .function{
             &__bloc{
                 padding: 0 5rem 2rem 5rem;
+            }
+        }
+        #restaurants{
+            .restaurants__bloc{
+                padding: 0 15% 0 15%;
+            }
+        }
+        .restaurant{
+            &__bloc{
+                padding: 1.5rem 20rem 2rem 20rem;
             }
         }
     }
