@@ -34,3 +34,19 @@
         }
     }
 }
+
+.header2{
+    display: grid;
+    grid-template-columns: 10% 90%;
+    padding-left: 1rem;
+    &__back{
+        font-size: 1.5rem;
+        padding: 1.7rem 0 0.3rem 0;
+        color: black;
+    }
+    &__logo{
+        padding: 1.5rem 0 0.3rem 0;
+        text-align: center;
+        padding-right: 10%;
+    }
+}

@@ -167,4 +167,92 @@ main{
             }
         }
     }
+    .restaurant{
+        &__img{
+            img{
+            max-height: 450px;
+            width: 100%;
+            object-fit: cover;
+            z-index: 0;
+            }
+        }
+        &__bloc{
+            @include flex(column);
+            position: relative;
+            gap: 1.5rem;
+            margin-top: -50px;
+            z-index: 1;
+            background-color: $lgrey;
+            padding: 1.5rem 1rem 0 1rem;
+            border-radius: 2rem 2rem 0 0;
+            &__header{
+                display: grid;
+                grid-template-columns: 90% 10%;
+                &__title{
+                    font-weight: bold;
+                    font-family: "shrikhand", cursive;
+                    font-size: 1.8rem;
+                }
+                i{
+                    text-align: right;
+                    padding-right: 1rem;
+                    font-size: 1.8rem;
+                    padding-top: 0.4rem;
+                }
+            }
+            &__menu{
+                @include flex(column);
+                gap: 1.2rem;
+                &__title{
+                    font-family: "roboto";
+                    font-size: 1rem;
+                    text-transform: uppercase;
+                    text-decoration:  3px underline $lgreen;
+                }
+                &__info{
+                    display: grid;
+                    grid-template-columns: 80% 20%;
+                    background-color: white;
+                    height: 3.7rem;
+                    border-radius: 15px;
+                    box-shadow: 0 0.3px 1.3px -5px rgba(0, 0, 0, 0.35),
+                    0 2px 15px -5px rgba(0, 0, 0, 0.7);
+                    &__text{
+                        padding-left: 0.5rem;
+                        @include flex(column);
+                        justify-content: center;
+                        font-family: "roboto";
+                        h2{
+                            font-weight: bold;
+                            font-size: 1rem;
+                            padding-bottom: 0.3rem;
+                        }
+                        h3{
+                            font-size: 0.9rem;
+                        }
+                    }
+                    p{
+                        font-family: "roboto";
+                        font-weight: bold;
+                        padding-top: 2.1rem;
+                        text-align: end;
+                        padding-right: 1rem;
+                    }
+                    &:hover{
+                        box-shadow: 0 0.3px 2.5px -3px rgba(0, 0, 0, 0.35),
+                        0 2px 17px -3px rgba(0, 0, 0, 0.7);
+                    }
+                }
+                padding-bottom: 2rem; 
+            }
+            &__btn-command{
+                height: 60px;
+                text-align: center;
+                &__a{
+                    @include button;
+                    font-family: "roboto";
+                }
+            }
+        }
+    }
 }

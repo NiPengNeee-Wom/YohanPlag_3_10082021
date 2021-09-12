@@ -113,11 +113,27 @@ th {
   color: #353535;
 }
 
+.header2 {
+  display: grid;
+  grid-template-columns: 10% 90%;
+  padding-left: 1rem;
+}
+.header2__back {
+  font-size: 1.5rem;
+  padding: 1.7rem 0 0.3rem 0;
+  color: black;
+}
+.header2__logo {
+  padding: 1.5rem 0 0.3rem 0;
+  text-align: center;
+  padding-right: 10%;
+}
+
 #footer {
   background-color: #353535;
 }
 #footer .footer__container {
-  padding: 0 0 1rem 1.5rem;
+  padding: 0 1.5rem 1rem 1.5rem;
 }
 #footer .footer__container h2 {
   color: white;
@@ -132,6 +148,7 @@ th {
 #footer .footer__container__list__icon {
   padding: 0 0 0.3rem 0;
   color: white;
+  font-family: "roboto";
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -149,6 +166,7 @@ th {
   margin-right: 0.4rem;
 }
 #footer .footer__container__list__a {
+  font-family: "roboto";
   padding: 0 0 0.3rem 0;
   text-decoration: none;
   color: white;
@@ -332,6 +350,105 @@ main #restaurants .restaurants__bloc__link__info__heart {
 main #restaurants .restaurants__bloc__link:hover {
   box-shadow: 0 0.3px 2.5px -3px rgba(0, 0, 0, 0.35), 0 2px 17px -3px rgba(0, 0, 0, 0.7);
 }
+main .restaurant__img img {
+  max-height: 450px;
+  width: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+main .restaurant__bloc {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 1.5rem;
+  margin-top: -50px;
+  z-index: 1;
+  background-color: #f6f6f6;
+  padding: 1.5rem 1rem 0 1rem;
+  border-radius: 2rem 2rem 0 0;
+}
+main .restaurant__bloc__header {
+  display: grid;
+  grid-template-columns: 90% 10%;
+}
+main .restaurant__bloc__header__title {
+  font-weight: bold;
+  font-family: "shrikhand", cursive;
+  font-size: 1.8rem;
+}
+main .restaurant__bloc__header i {
+  text-align: right;
+  padding-right: 1rem;
+  font-size: 1.8rem;
+  padding-top: 0.4rem;
+}
+main .restaurant__bloc__menu {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding-bottom: 2rem;
+}
+main .restaurant__bloc__menu__title {
+  font-family: "roboto";
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-decoration: 3px underline #99e2d0;
+}
+main .restaurant__bloc__menu__info {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  background-color: white;
+  height: 3.7rem;
+  border-radius: 15px;
+  box-shadow: 0 0.3px 1.3px -5px rgba(0, 0, 0, 0.35), 0 2px 15px -5px rgba(0, 0, 0, 0.7);
+}
+main .restaurant__bloc__menu__info__text {
+  padding-left: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "roboto";
+}
+main .restaurant__bloc__menu__info__text h2 {
+  font-weight: bold;
+  font-size: 1rem;
+  padding-bottom: 0.3rem;
+}
+main .restaurant__bloc__menu__info__text h3 {
+  font-size: 0.9rem;
+}
+main .restaurant__bloc__menu__info p {
+  font-family: "roboto";
+  font-weight: bold;
+  padding-top: 2.1rem;
+  text-align: end;
+  padding-right: 1rem;
+}
+main .restaurant__bloc__menu__info:hover {
+  box-shadow: 0 0.3px 2.5px -3px rgba(0, 0, 0, 0.35), 0 2px 17px -3px rgba(0, 0, 0, 0.7);
+}
+main .restaurant__bloc__btn-command {
+  height: 60px;
+  text-align: center;
+}
+main .restaurant__bloc__btn-command__a {
+  text-decoration: none;
+  color: white;
+  padding: 1rem 1.2rem 1rem 1.2rem;
+  outline: none;
+  border-radius: 2rem;
+  border: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  transition-duration: 0.4s;
+  box-shadow: 0 0.3px 1.3px -5px rgba(0, 0, 0, 0.35), 0 2px 15px -5px rgba(0, 0, 0, 0.7);
+  font-family: "roboto";
+}
+main .restaurant__bloc__btn-command__a:hover {
+  filter: brightness(110%);
+  background: -webkit-gradient(linear, left top, left bottom, from #ff79da, to #9356dc);
+  transition-duration: 0.5s;
+  box-shadow: 0 0.3px 2.5px -3px rgba(0, 0, 0, 0.35), 0 2px 17px -3px rgba(0, 0, 0, 0.7);
+}
 
 /* responsive index */
 @media (min-width: 768px) {
@@ -350,6 +467,16 @@ main #restaurants .restaurants__bloc__link:hover {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
+  }
+
+  #footer .footer__container h2 {
+    text-align: center;
+  }
+  #footer .footer__container__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
   }
 }
 @media (min-width: 1140px) {

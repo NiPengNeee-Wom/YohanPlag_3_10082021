@@ -25,6 +25,18 @@
             }
         }
     }
+    #footer{
+        .footer__container{
+            h2{
+                text-align: center;
+            }
+            &__list{
+                @include flex(row);
+                justify-content: center;
+                gap: 1rem,
+            }
+        }
+    }
 }
 
 @media (min-width: 1140px){
@@ -32,10 +44,6 @@
         .function{
             &__bloc{
                 padding: 0 5rem 2rem 5rem;
-            }
-        }
-        .restaurants{
-            &__bloc{
             }
         }
     }
