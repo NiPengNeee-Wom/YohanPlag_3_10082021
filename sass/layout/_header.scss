@@ -1,3 +1,36 @@
-.test{
-    border: 1px solid black;
+@use "../utils" as *;
+
+.header{
+    @include flex(column);
+    &__logo {
+        text-align: center;
+        padding: 1.5rem 0 0.3rem 0;
+    }
+    &__sub{
+        text-align: center;
+        @include flex(column);
+        &__search{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: $mgrey;
+            padding-right: 1rem;
+            i{
+                padding-bottom: 0.2rem;
+            }
+            input {
+                width: 9rem;
+                text-align: right;
+                border: 1px transparent;
+                outline: none;
+                padding: 0.9rem 0rem;
+                background: $mgrey;
+                font-size: 1rem;
+                font-weight: bold;
+                &::placeholder {
+                color: $darkgrey;
+                }
+            }
+        }
+    }
 }

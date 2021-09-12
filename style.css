@@ -1,9 +1,361 @@
-.test {
-  border: 1px solid black;
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
 }
 
-h1 {
-  color: pink;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input,
+select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+}
+.header__logo {
+  text-align: center;
+  padding: 1.5rem 0 0.3rem 0;
+}
+.header__sub {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.header__sub__search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #eaeaea;
+  padding-right: 1rem;
+}
+.header__sub__search i {
+  padding-bottom: 0.2rem;
+}
+.header__sub__search input {
+  width: 9rem;
+  text-align: right;
+  border: 1px transparent;
+  outline: none;
+  padding: 0.9rem 0rem;
+  background: #eaeaea;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.header__sub__search input::placeholder {
+  color: #353535;
+}
+
+#footer {
+  background-color: #353535;
+}
+#footer .footer__container {
+  padding: 0 0 1rem 1.5rem;
+}
+#footer .footer__container h2 {
+  color: white;
+  font-family: "Shrikhand", cursive;
+  font-size: 1.2rem;
+  padding: 1rem 0 1rem 0;
+}
+#footer .footer__container__list {
+  display: flex;
+  flex-direction: column;
+}
+#footer .footer__container__list__icon {
+  padding: 0 0 0.3rem 0;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#footer .footer__container__list__icon__a {
+  text-decoration: none;
+  color: white;
+}
+#footer .footer__container__list__icon__i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  width: 1rem;
+  margin-right: 0.4rem;
+}
+#footer .footer__container__list__a {
+  padding: 0 0 0.3rem 0;
+  text-decoration: none;
+  color: white;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+main .resa {
+  background-color: #f6f6f6;
+  text-align: center;
+}
+main .resa__h1 {
+  padding: 2rem 3rem 0.6rem 3rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-family: "roboto";
+}
+main .resa__p {
+  color: grey;
+  font-size: 1.1rem;
+  font-family: "roboto";
+  padding: 0rem 1.5rem 1rem 1.5rem;
+}
+main .resa__anchor {
+  height: 6.5rem;
+  padding-top: 1.5rem;
+}
+main .resa__anchor__a {
+  text-decoration: none;
+  color: white;
+  padding: 1rem 1.2rem 1rem 1.2rem;
+  outline: none;
+  border-radius: 2rem;
+  border: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  transition-duration: 0.4s;
+  box-shadow: 0 0.3px 1.3px -5px rgba(0, 0, 0, 0.35), 0 2px 15px -5px rgba(0, 0, 0, 0.7);
+  font-family: "roboto";
+}
+main .resa__anchor__a:hover {
+  filter: brightness(110%);
+  background: -webkit-gradient(linear, left top, left bottom, from #ff79da, to #9356dc);
+  transition-duration: 0.5s;
+  box-shadow: 0 0.3px 2.5px -3px rgba(0, 0, 0, 0.35), 0 2px 17px -3px rgba(0, 0, 0, 0.7);
+}
+main .function {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+main .function__title {
+  padding: 2.5rem 0rem 2.5rem 0rem;
+  font-family: "roboto";
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+main .function__bloc {
+  padding-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2.5rem;
+  gap: 1.5rem;
+}
+main .function__bloc__link {
+  box-shadow: 0 0.3px 1.3px -5px rgba(0, 0, 0, 0.35), 0 2px 8px -5px rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  border-radius: 1.5rem;
+  border: transparent;
+  padding: 1.65rem;
+  background: #f6f6f6;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  color: black;
+  transition-duration: 0.3s;
+  font-family: "roboto";
+  width: 100%;
+}
+main .function__bloc__link__round {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background: #9356dc;
+  border-radius: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: -2.5rem;
+  color: white;
+}
+main .function__bloc__link__round p {
+  font-size: 0.8rem;
+}
+main .function__bloc__link__text {
+  display: flex;
+  align-items: center;
+}
+main .function__bloc__link__text p {
+  padding-left: 1.5rem;
+}
+main .function__bloc__link__text i {
+  font-size: 1.2rem;
+  color: #656565;
+}
+main .function__bloc__link:hover {
+  box-shadow: 0 0.3px 2.5px -3px rgba(0, 0, 0, 0.35), 0 3px 15px -3px rgba(0, 0, 0, 0.7);
+  background: #f5edff;
+  transition-duration: 0.5s;
+}
+main .function__bloc__link:hover i {
+  color: #9356dc;
+}
+main #restaurants {
+  background-color: #f6f6f6;
+  padding: 0rem 1rem 2rem 1rem;
+}
+main #restaurants .restaurants__title {
+  padding: 2.5rem 0rem 1.5rem 0rem;
+  font-family: "roboto";
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+main #restaurants .restaurants__bloc {
+  display: grid;
+  grid-template-columns: autos;
+  gap: 1.5rem;
+}
+main #restaurants .restaurants__bloc__link {
+  border-radius: 1rem;
+  height: 15rem;
+  box-shadow: 0 0.3px 1.3px -5px rgba(0, 0, 0, 0.35), 0 2px 15px -5px rgba(0, 0, 0, 0.7);
+  text-decoration: none;
+  color: black;
+}
+main #restaurants .restaurants__bloc__link__new {
+  position: absolute;
+  right: 2rem;
+  width: 5rem;
+  margin-top: 1rem;
+  background: #99e2d0;
+  text-align: center;
+  height: 2rem;
+  border-radius: 5px;
+}
+main #restaurants .restaurants__bloc__link__new p {
+  font-family: "roboto";
+  color: #019771;
+  padding-top: 0.4rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+main #restaurants .restaurants__bloc__link__img {
+  height: 70%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1rem 1rem 0 0;
+}
+main #restaurants .restaurants__bloc__link__info {
+  height: 30%;
+  display: grid;
+  grid-template-columns: 80% 20%;
+}
+main #restaurants .restaurants__bloc__link__info__text {
+  padding: 0.8rem 0 0 0.8rem;
+  font-size: 1rem;
+  font-family: "roboto";
+}
+main #restaurants .restaurants__bloc__link__info__text h3 {
+  padding-bottom: 0.2rem;
+  font-weight: bold;
+}
+main #restaurants .restaurants__bloc__link__info__heart {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding-right: 1rem;
+  padding-bottom: 0.5rem;
+}
+main #restaurants .restaurants__bloc__link:hover {
+  box-shadow: 0 0.3px 2.5px -3px rgba(0, 0, 0, 0.35), 0 2px 17px -3px rgba(0, 0, 0, 0.7);
+}
+
+/* responsive index */
+@media (min-width: 768px) {
+  main .function__title {
+    text-align: center;
+  }
+  main .function__bloc {
+    display: flex;
+    flex-direction: row;
+  }
+  main .restaurants__title {
+    text-align: center;
+  }
+  main .restaurants__bloc {
+    padding-right: 1.5rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+  }
+}
+@media (min-width: 1140px) {
+  main .function__bloc {
+    padding: 0 5rem 2rem 5rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

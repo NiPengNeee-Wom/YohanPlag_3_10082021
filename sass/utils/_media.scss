@@ -1,0 +1,42 @@
+@use "../utils" as *;
+
+/* responsive index */
+
+@media (min-width: 768px){
+    main{
+        .function{
+            &__title{
+                text-align: center;
+            }
+            &__bloc{
+                display: flex;
+                flex-direction: row;
+            }
+        }
+        .restaurants{
+            &__title{
+                text-align: center;
+            }
+            &__bloc{
+                padding-right: 1.5rem;
+                display: grid;
+                grid-template-columns: 50% 50%;
+                grid-template-rows: 50% 50%;
+            }
+        }
+    }
+}
+
+@media (min-width: 1140px){
+    main{
+        .function{
+            &__bloc{
+                padding: 0 5rem 2rem 5rem;
+            }
+        }
+        .restaurants{
+            &__bloc{
+            }
+        }
+    }
+}
