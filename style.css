@@ -465,8 +465,9 @@ main .restaurant__bloc {
   border-radius: 2rem 2rem 0 0;
 }
 main .restaurant__bloc__header {
-  display: grid;
-  grid-template-columns: 90% 10%;
+  display: flex;
+  flex-direction: row;
+  gap: 1.8rem;
 }
 main .restaurant__bloc__header__title {
   font-weight: bold;
