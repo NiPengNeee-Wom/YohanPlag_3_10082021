@@ -600,9 +600,6 @@ main .restaurant__bloc__btn-command__a:hover {
     grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
   }
-  main .restaurants__bloc__link__new {
-    display: none;
-  }
 
   #footer .footer__container h2 {
     text-align: center;
