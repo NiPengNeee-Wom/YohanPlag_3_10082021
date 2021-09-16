@@ -76,6 +76,41 @@ th {
   padding: 0;
 }
 
+/* animation du coeur */
+.restaurants__bloc__link__info__heart .far {
+  animation: heartanimblack 1.2s;
+}
+.restaurants__bloc__link__info__heart input {
+  position: absolute;
+  visibility: hidden;
+}
+.restaurants__bloc__link__info__heart input[type=checkbox]:checked ~ i {
+  font-weight: 900;
+  background: linear-gradient(45deg, #ff79da 0%, #9356dc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: heartanim 1.5s;
+}
+.restaurants__bloc__link__info__heart:hover {
+  cursor: pointer;
+}
+@keyframes heartanim {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes heartanimblack {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .header {
   display: flex;
   flex-direction: column;
@@ -329,7 +364,7 @@ main #restaurants .restaurants__bloc__link__img {
 main #restaurants .restaurants__bloc__link__info {
   height: 30%;
   display: grid;
-  grid-template-columns: 80% 20%;
+  grid-template-columns: 90% 10%;
 }
 main #restaurants .restaurants__bloc__link__info__text {
   padding: 0.8rem 0 0 0.8rem;

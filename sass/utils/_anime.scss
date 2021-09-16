@@ -1,1 +1,46 @@
 @use "../utils/colors" as *;
+
+/* animation du coeur */
+
+.restaurants__bloc__link__info__heart{
+    .far {
+        animation: heartanimblack 1.2s;
+    }
+
+    input {
+        position: absolute;
+        visibility: hidden;
+    }
+    
+    input[type="checkbox"]:checked ~ i {
+        font-weight: 900;
+        background: linear-gradient(
+          45deg,
+          rgba(255, 121, 218, 1) 0%,
+          rgba(147, 86, 220, 1) 100%
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: heartanim 1.5s;
+    }
+    &:hover {
+        cursor: pointer;
+    }
+    
+    @keyframes heartanim {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+    }
+    @keyframes heartanimblack {
+        0% {
+        opacity: 0;
+        }
+        100% {
+        opacity: 1;
+        }
+    }
+}
