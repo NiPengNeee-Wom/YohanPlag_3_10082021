@@ -211,14 +211,34 @@ main{
                     text-decoration:  3px underline $lgreen;
                 }
                 &__info{
-                    display: grid;
-                    grid-template-columns: 80% 20%;
+                    display: flex;
+                    overflow: hidden;
+                    width: 100%;
                     background-color: white;
                     height: 3.7rem;
                     border-radius: 15px;
                     box-shadow: 0 0.3px 1.3px -5px rgba(0, 0, 0, 0.35),
                     0 2px 15px -5px rgba(0, 0, 0, 0.7);
+                    .icone {
+                        width: 5rem;
+                        background: $lgreen;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        transition-duration: 0.5s;
+                        transition-timing-function: ease;
+                        margin-right: -5rem;
+                        > i {
+                          font-size: 1rem;
+                          color: $lgreen;
+                          padding: 0.2rem;
+                          border-radius: 50%;
+                          background: white;
+                          transition-duration: 0.5s;
+                        }
+                    }
                     &__text{
+                        flex: 10;
                         padding-left: 0.5rem;
                         @include flex(column);
                         justify-content: center;
@@ -233,6 +253,7 @@ main{
                         }
                     }
                     p{
+                        flex: 1;
                         font-family: "roboto";
                         font-weight: bold;
                         padding-top: 2.1rem;

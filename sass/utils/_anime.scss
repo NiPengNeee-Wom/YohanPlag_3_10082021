@@ -122,3 +122,20 @@
 }
 
 /* Animation checkbox menu */
+
+.restaurant__bloc__menu{
+    &__info{
+        &:hover {
+            cursor: pointer;
+            .icone {
+              margin-right: 0;
+              transition-duration: 0.5s;
+              transition-timing-function: ease;
+            }
+            i {
+              transform: rotate(360deg);
+              transition-duration: 0.5s;
+            }
+        }
+    }
+}
