@@ -340,6 +340,8 @@ main .function__bloc {
   flex-direction: column;
   padding-bottom: 2.5rem;
   gap: 1.5rem;
+  max-width: 80rem;
+  margin: auto;
 }
 main .function__bloc__link {
   box-shadow: 0 0.3px 1.3px -5px rgba(0, 0, 0, 0.35), 0 2px 8px -5px rgba(0, 0, 0, 0.7);
@@ -510,6 +512,7 @@ main .restaurant__bloc__menu__info {
   display: flex;
   overflow: hidden;
   gap: 1rem;
+  padding-left: 0.4rem;
   width: 100%;
   background-color: white;
   height: 3.7rem;
@@ -565,7 +568,7 @@ main .restaurant__bloc__menu__info p {
   font-weight: bold;
   padding-top: 2.1rem;
   text-align: end;
-  padding-right: 1rem;
+  padding-right: 0.5rem;
 }
 main .restaurant__bloc__menu__info:hover {
   box-shadow: 0 0.3px 2.5px -3px rgba(0, 0, 0, 0.35), 0 2px 17px -3px rgba(0, 0, 0, 0.7);

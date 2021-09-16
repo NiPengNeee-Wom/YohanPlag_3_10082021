@@ -11,33 +11,33 @@
 }
 
 @mixin button {
-    @include link(white);
-    padding: 1rem 1.2rem 1rem 1.2rem;
-    outline: none;
-    border-radius: 2rem;
-    border: none;
+  @include link(white);
+  padding: 1rem 1.2rem 1rem 1.2rem;
+  outline: none;
+  border-radius: 2rem;
+  border: none;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#ff79da),
+    to(#9356dc)
+  );
+  transition-duration: 0.4s;
+  box-shadow: 0 0.3px 1.3px -5px rgba(0, 0, 0, 0.35),
+  0 2px 15px -5px rgba(0, 0, 0, 0.7);
+  
+  &:hover {
+    filter: brightness(110%);
     background: -webkit-gradient(
       linear,
       left top,
       left bottom,
-      from(#ff79da),
-      to(#9356dc)
+      from (#ff79da),
+      to (#9356dc)
     );
-    transition-duration: 0.4s;
-    box-shadow: 0 0.3px 1.3px -5px rgba(0, 0, 0, 0.35),
-      0 2px 15px -5px rgba(0, 0, 0, 0.7);
-  
-    &:hover {
-      filter: brightness(110%);
-      background: -webkit-gradient(
-        linear,
-        left top,
-        left bottom,
-        from (#ff79da),
-        to (#9356dc)
-      );
-      transition-duration: 0.5s;
-      box-shadow: 0 0.3px 2.5px -3px rgba(0, 0, 0, 0.35),
-        0 2px 17px -3px rgba(0, 0, 0, 0.7);
-    }
+    transition-duration: 0.5s;
+    box-shadow: 0 0.3px 2.5px -3px rgba(0, 0, 0, 0.35),
+      0 2px 17px -3px rgba(0, 0, 0, 0.7);
   }
+}

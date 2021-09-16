@@ -41,6 +41,8 @@ main{
             @include flex(column);
             padding-bottom: 2.5rem;
             gap: 1.5rem;
+            max-width: 80rem;
+            margin: auto;
                 &__link{
                     box-shadow: 0 0.3px 1.3px -5px rgba(0, 0, 0, 0.35),
                     0 2px 8px -5px rgba(0, 0, 0, 0.7);
@@ -86,11 +88,11 @@ main{
                     &:hover {
                         box-shadow: 0 0.3px 2.5px -3px rgba(0, 0, 0, 0.35),
                         0 3px 15px -3px rgba(0, 0, 0, 0.7);
-                      background: $special;
-                      transition-duration: 0.5s;
-                      i {
-                        color: $purple;
-                      }
+                        background: $special;
+                        transition-duration: 0.5s;
+                        i {
+                            color: $purple;
+                        }
                     }
                 }
         }
@@ -215,6 +217,7 @@ main{
                     display: flex;
                     overflow: hidden;
                     gap: 1rem;
+                    padding-left: 0.4rem;
                     width: 100%;
                     background-color: white;
                     height: 3.7rem;
@@ -269,7 +272,7 @@ main{
                         font-weight: bold;
                         padding-top: 2.1rem;
                         text-align: end;
-                        padding-right: 1rem;
+                        padding-right: 0.5rem;
                     }
                     &:hover{
                         box-shadow: 0 0.3px 2.5px -3px rgba(0, 0, 0, 0.35),
