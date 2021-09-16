@@ -509,6 +509,7 @@ main .restaurant__bloc__menu__title {
 main .restaurant__bloc__menu__info {
   display: flex;
   overflow: hidden;
+  gap: 1rem;
   width: 100%;
   background-color: white;
   height: 3.7rem;
@@ -535,7 +536,7 @@ main .restaurant__bloc__menu__info .icone > i {
 }
 main .restaurant__bloc__menu__info__text {
   flex: 10;
-  padding-left: 0.5rem;
+  padding-left: 0.2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -214,6 +214,7 @@ main{
                 &__info{
                     display: flex;
                     overflow: hidden;
+                    gap: 1rem;
                     width: 100%;
                     background-color: white;
                     height: 3.7rem;
@@ -240,7 +241,7 @@ main{
                     }
                     &__text{
                         flex: 10;
-                        padding-left: 0.5rem;
+                        padding-left: 0.2rem;
                         @include flex(column);
                         justify-content: center;
                         font-family: "roboto";
