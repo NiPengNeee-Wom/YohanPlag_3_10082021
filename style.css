@@ -130,9 +130,9 @@ th {
   border-top: 5px solid #99e2d0;
   border-bottom: 5px solid #019771;
   border-radius: 50%;
-  width: 70px;
-  height: 70px;
-  animation: loading 1s ease-in-out;
+  width: 100px;
+  height: 100px;
+  animation: loading 1s linear;
   animation-iteration-count: 3;
 }
 

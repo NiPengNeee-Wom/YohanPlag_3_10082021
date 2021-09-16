@@ -67,9 +67,9 @@
     border-top: 5px solid $lgreen;
     border-bottom: 5px solid $green;
     border-radius: 50%;
-    width: 70px;
-    height: 70px;
-    animation: loading 1s ease-in-out;
+    width: 100px;
+    height: 100px;
+    animation: loading 1s linear;
     animation-iteration-count: 3;
 }
 
