@@ -540,14 +540,23 @@ main .restaurant__bloc__menu__info__text {
   flex-direction: column;
   justify-content: center;
   font-family: "roboto";
+  overflow: hidden;
 }
 main .restaurant__bloc__menu__info__text h2 {
   font-weight: bold;
   font-size: 1rem;
   padding-bottom: 0.3rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
+  overflow: hidden;
 }
 main .restaurant__bloc__menu__info__text h3 {
   font-size: 0.9rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 100%;
+  overflow: hidden;
 }
 main .restaurant__bloc__menu__info p {
   flex: 1;
