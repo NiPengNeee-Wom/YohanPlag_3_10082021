@@ -150,6 +150,29 @@ th {
     z-index: -1;
   }
 }
+/* Animation menu casquade*/
+.restaurant__bloc #entrees {
+  animation: fadelist 1s ease-in 0.2s forwards;
+  opacity: 0;
+}
+.restaurant__bloc #plats {
+  animation: fadelist 1s ease-in 0.4s forwards;
+  opacity: 0;
+}
+.restaurant__bloc #desserts {
+  animation: fadelist 1s ease-in 0.6s forwards;
+  opacity: 0;
+}
+
+@keyframes fadelist {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Animation checkbox menu */
 .header {
   display: flex;
   flex-direction: column;
