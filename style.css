@@ -411,6 +411,7 @@ main #restaurants .restaurants__bloc__link {
   box-shadow: 0 0.3px 1.3px -5px rgba(0, 0, 0, 0.35), 0 2px 15px -5px rgba(0, 0, 0, 0.7);
   text-decoration: none;
   color: black;
+  position: relative;
 }
 main #restaurants .restaurants__bloc__link__new {
   position: absolute;
