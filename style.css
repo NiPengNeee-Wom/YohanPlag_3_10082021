@@ -446,6 +446,8 @@ main #restaurants .restaurants__bloc__link__info {
   grid-template-columns: 90% 10%;
 }
 main #restaurants .restaurants__bloc__link__info__text {
+  text-decoration: none;
+  color: black;
   padding: 0.8rem 0 0 0.8rem;
   font-size: 1rem;
   font-family: "roboto";
