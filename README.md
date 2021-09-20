@@ -1,8 +1,5 @@
 # YohanPlag_3_10082021
 
-Projet dynamisez une page web avec des animations CSS
-
-
 Liens vers le site: https://nipengneee-wom.github.io/YohanPlag_3_10082021/
 
 
