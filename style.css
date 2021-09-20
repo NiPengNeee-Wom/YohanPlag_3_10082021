@@ -485,8 +485,8 @@ main .restaurant__bloc {
 }
 main .restaurant__bloc__header {
   display: flex;
+  justify-content: space-between;
   flex-direction: row;
-  gap: 1.8rem;
 }
 main .restaurant__bloc__header__title {
   font-weight: bold;

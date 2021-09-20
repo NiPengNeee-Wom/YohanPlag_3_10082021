@@ -192,8 +192,8 @@ main{
             border-radius: 2rem 2rem 0 0;
             &__header{
                 display: flex;
+                justify-content: space-between;
                 flex-direction: row;
-                gap: 1.8rem;
                 &__title{
                     font-weight: bold;
                     font-family: "shrikhand", cursive;
