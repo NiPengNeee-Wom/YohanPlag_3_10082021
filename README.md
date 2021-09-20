@@ -2,11 +2,9 @@
 
 Projet dynamisez une page web avec des animations CSS
 
-<p align="center">
-    Par Yohan Plag
-    <br>
-    <a href="https://nipengneee-wom.github.io/YohanPlag_3_10082021/">Liens vers le site</a>
-</p>
+
+Liens vers le site: https://nipengneee-wom.github.io/YohanPlag_3_10082021/
+
 
 
 ## Sujet:
