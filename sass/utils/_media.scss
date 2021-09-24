@@ -47,13 +47,19 @@
             }
         }
         #restaurants{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             .restaurants__bloc{
-                padding: 0 15% 0 15%;
+                width: 60rem;
             }
         }
         .restaurant{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
             &__bloc{
-                padding: 1.5rem 20rem 2rem 20rem;
+                padding: 1.5rem 25% 0 25%;
             }
         }
     }

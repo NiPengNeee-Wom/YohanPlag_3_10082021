@@ -194,6 +194,8 @@ th {
 .header__logo {
   text-align: center;
   padding: 1.5rem 0 0.3rem 0;
+  font-size: 1.9rem;
+  font-family: "shrikhand", cursive;
 }
 .header__sub {
   text-align: center;
@@ -238,6 +240,8 @@ th {
   padding: 1.5rem 0 0.3rem 0;
   text-align: center;
   padding-right: 10%;
+  font-size: 1.9rem;
+  font-family: "shrikhand", cursive;
 }
 
 #footer {
@@ -632,11 +636,21 @@ main .restaurant__bloc__btn-command__a:hover {
   main .function__bloc {
     padding: 0 5rem 2rem 5rem;
   }
+  main #restaurants {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   main #restaurants .restaurants__bloc {
-    padding: 0 15% 0 15%;
+    width: 60rem;
+  }
+  main .restaurant {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   main .restaurant__bloc {
-    padding: 1.5rem 20rem 2rem 20rem;
+    padding: 1.5rem 25% 0 25%;
   }
 }
 
